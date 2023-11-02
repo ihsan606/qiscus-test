@@ -6,7 +6,7 @@ This is a simple HTML/CSS project that demonstrates interactive box elements wit
 I have deployed this project in 2 platform : Github Pages and Google Cloud Platform via App Engine.
 Links provided below:
 - [Google Cloud Platform](https://gamebox-403902.uc.r.appspot.com)
-- [Github Pages](ihsan606.github.io/qiscus-test)
+- [Github Pages](https://ihsan606.github.io/qiscus-test)
 
 
 ## Project Structure
