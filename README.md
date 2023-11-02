@@ -2,6 +2,13 @@
 
 This is a simple HTML/CSS project that demonstrates interactive box elements with stylish background images. The project showcases the use of CSS selectors and properties to create dynamic visual effects based on user interactions.
 
+## Demo
+I have deployed this project in 2 platform : Github Pages and Google Cloud Platform via App Engine.
+Links provided below:
+- [Google Cloud Platform](https://gamebox-403902.uc.r.appspot.com)
+- [Github Pages](ihsan606.github.io/qiscus-test)
+
+
 ## Project Structure
 
 The project consists of an HTML file and a corresponding CSS file. The HTML file defines the structure of the boxes, while the CSS file provides the styling and interactivity for the elements.
