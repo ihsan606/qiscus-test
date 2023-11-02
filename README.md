@@ -15,8 +15,19 @@ git@github.com:ihsan606/qiscus-test.git
 ```
 Then, open the index.html file in your web browser to view the interactive boxes.
 
-## Usage
+### CSS Interactivity Details
 
-The interactive boxes are designed to respond to user hover interactions. When you hover over a box, it displays a stylish arrow image to indicate the direction based on the position of the adjacent boxes. The project demonstrates the use of CSS properties such as `background-image`, `:hover`, and sibling selectors to create the dynamic effects.
+The CSS within the project includes interactive elements that respond to user actions. Here's a breakdown of the CSS classes and their functionalities:
+
+1. `.box_inside:hover ~ .box_inside`:
+   - When you hover over one of the box elements (box_inside), a left-facing arrow image (long-arrow-left.png) will appear in the box next to it on the left.
+   - The tilde (~) here signifies the selection of another box with the same class that is directly to the left of the currently hovered box.
+
+2. `.box_inside:has(~ .box_inside:hover)`:
+   - This signifies that when a box (box_inside) has another box next to it that is being hovered, a right-facing arrow image (long-arrow-right.png) will appear on that box.
+   - The pseudo-class :has() indicates that the box has another box next to it that is being hovered.
+
+These CSS properties and selectors create a dynamic and visually appealing interaction within the project.
+
 
 
