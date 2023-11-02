@@ -1,0 +1,85 @@
+<html>
+  <head>
+    <title>Test 2 Answer</title>
+    <style>
+      html,
+      body {
+        font-family: "Inter", sans-serif;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        color: #555555;
+        background: #fafafa;
+      }
+      .box {
+        width: 600px;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        margin: 50px;
+      }
+      .box2 {
+        width: 100px;
+        height: 600px;
+        display: flex;
+        flex-direction: column; 
+        margin: 5px;
+      }
+      .box_inside,
+      .box2_inside,
+      .box_inside:hover,
+      .box2_inside:hover {
+        width: 100px;
+        height: 100px;
+        margin: 1px;
+        border: 1px solid #ccc;
+        background-image: url(https://img.icons8.com/stickers/100/full-stop.png);
+        background-repeat: no-repeat !important;
+        background-size: 50%;
+        background-position: center;
+        border-radius: 8px;
+      }
+      .box_inside:hover ~ .box_inside {
+        background-image: url(https://img.icons8.com/stickers/100/long-arrow-left.png);
+      }
+
+      .box_inside:has(~ .box_inside:hover) {
+        background-image: url(https://img.icons8.com/stickers/100/long-arrow-right.png);
+      }
+
+      .box2_inside:hover ~ .box2_inside {
+        background-image: url(https://img.icons8.com/stickers/100/long-arrow-up.png);
+      }
+
+      .box2_inside:has(~ .box2_inside:hover) {
+        background-image: url(https://img.icons8.com/stickers/100/long-arrow-down.png);
+      }
+
+      /*
+            assets:
+            RIGHT ARROW: https://d1edrlpyc25xu0.cloudfront.net/hat-ppxmocchbbcbhopzk/image/upload/w_320,h_320,c_limit/DFrQ7vCgy2/right.png
+            LEFT ARROW: https://d1edrlpyc25xu0.cloudfront.net/hat-ppxmocchbbcbhopzk/image/upload/w_320,h_320,c_limit/4RQPxvmQRX/left.png
+            DOWN ARROW: https://d1edrlpyc25xu0.cloudfront.net/hat-ppxmocchbbcbhopzk/image/upload/w_320,h_320,c_limit/rR-t7stGWr/down.png
+            UP ARROW: https://d1edrlpyc25xu0.cloudfront.net/hat-ppxmocchbbcbhopzk/image/upload/w_320,h_320,c_limit/YdH9_StfiW/up.png
+            */
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="box_inside"></div>
+      <div class="box_inside"></div>
+      <div class="box_inside"></div>
+      <div class="box_inside"></div>
+      <div class="box_inside"></div>
+      <div class="box_inside"></div>
+    </div>
+    <div class="box2">
+      <div class="box2_inside"></div>
+      <div class="box2_inside"></div>
+      <div class="box2_inside"></div>
+      <div class="box2_inside"></div>
+      <div class="box2_inside"></div>
+      <div class="box2_inside"></div>
+    </div>
+  </body>
+</html>
